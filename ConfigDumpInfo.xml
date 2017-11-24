@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
+	<ConfigVersions>
+		<Metadata name="Catalog.ВидыКонтактнойИнформации" id="c917ba38-47a3-4166-99d8-be15f34a5199" configVersion="bdc213e14870271ca27e37af4de84343dce899b2"/>
+		<Metadata name="Catalog.ДоговорыКонтрагентов" id="96b03cb0-800b-432e-9364-32b8d51b2fde" configVersion="6d75bcd5067ac134b1ba8cb8f15fff6236d34527"/>
+		<Metadata name="Catalog.Контрагенты" id="0348f3dc-8eec-4fa0-b7aa-96097b5ff3b6" configVersion="f31627931f70156fecf4857da6128bf1b66df8f5"/>
+		<Metadata name="Catalog.Организации" id="b2df0a77-3af2-4068-a1ad-3cddc945d99b" configVersion="238b31e503c1421b3374afce448e47f02975511d"/>
+		<Metadata name="CommonForm.НастройкаПечатиКомплекта" id="d9fa3c7c-0d19-40cd-88d6-4819fc0ad8e9" configVersion="2f5b3d9fb59339ec5fa2f8516c2f8cf30e042405"/>
+		<Metadata name="CommonForm.НастройкаПечатиКомплекта.Form" id="d9fa3c7c-0d19-40cd-88d6-4819fc0ad8e9.0" configVersion="32820e798a6c0544d3826dd5d73145980e554c68"/>
+		<Metadata name="CommonPicture.КонвертC4Выбран" id="e7e7045a-9715-41a1-9f3b-b7ce144c7e75" configVersion="8a5995f40841e9d40ef74527da4ab22fac5aafb6"/>
+		<Metadata name="CommonPicture.КонвертC5" id="6f86ce47-7a99-4572-8b71-c28de4d40a95" configVersion="3cc54a88a26f27ee40f55a17ac4b13365dfd96ec"/>
+		<Metadata name="CommonPicture.КонвертC5Выбран" id="73def388-a6ea-44a6-9c80-d26c9946e393" configVersion="f6cc55678a1fabefbf82d8688963d026307f6e97"/>
+		<Metadata name="CommonPicture.КонвертDL" id="d848fb06-bc7c-40d2-b6da-2036e1548ecc" configVersion="23057eeb2b533b7f8544bb0c72c6c9b8634f2618"/>
+		<Metadata name="CommonPicture.КонвертDLВыбран" id="74f1cdec-78dc-4eec-90ba-e23a7e3fafb0" configVersion="be2b8275e862c9b3736497e697de43c465cb1595"/>
+		<Metadata name="CommonPicture.КонвертС4" id="3e632f56-0432-4ffd-870d-d16f635f798e" configVersion="11bd1eb22d21e6fb6cdb95513ce9a438ccb2a625"/>
+		<Metadata name="CommonTemplate.Расш1_Макет" id="e14d22f7-17ea-456a-be1e-f6571cc68951" configVersion="3de016ed7bd33eda43bd08fd18a89fd05bc0e14c"/>
+		<Metadata name="Configuration.ПечатьКомплектовВПДФ" id="63e934e1-3ab0-4f20-964e-4f0190ce9bcb" configVersion="dab4585303de2ae856d28e393db5b10e05496ebf"/>
+		<Metadata name="Document.АктСверкиВзаиморасчетов" id="f3b393fd-020f-4749-9037-1afd816bb8de" configVersion="d4875e9ac1b2c9dbe15cbc5947d154e254ff4cda"/>
+		<Metadata name="Document.ПоступлениеТоваровУслуг" id="d89a5cf7-a084-4569-b3a6-93474676afeb" configVersion="d9b4a7b82fee5fa999fa82bff4a1eaa7a4d1051b"/>
+		<Metadata name="Document.РеализацияТоваровУслуг" id="98418841-0ca1-4b1e-9639-f12713350291" configVersion="a7198bf0164a888bbf526a2bae4b6a83f193d306"/>
+		<Metadata name="Document.СчетФактураВыданный" id="85d4b268-0649-4e39-8b8f-e8d425eb45d9" configVersion="ae10006c6da8638bf861f9ef5a37ad34d00a5794"/>
+		<Metadata name="Document.СчетФактураПолученный" id="4fc99d5e-fc3e-4eb4-bd84-8a58401437e5" configVersion="7792df355db95b61267e87c58cc51264b2394264"/>
+		<Metadata name="Enum.ФорматыПочтовыхКонвертов" id="d6fbd133-2f0e-4a8f-88dc-b9df889ce397" configVersion="d99fed68d84c6347340b207ecfd0cd752282aa31">
+			<Metadata name="Enum.ФорматыПочтовыхКонвертов.EnumValue.C4" id="939fa8bf-9cee-4e33-9ac7-ce3bb4ce1df5"/>
+			<Metadata name="Enum.ФорматыПочтовыхКонвертов.EnumValue.C5" id="dd13feed-64f4-4da6-b389-58bea7037c35"/>
+			<Metadata name="Enum.ФорматыПочтовыхКонвертов.EnumValue.DL" id="ec6f3e8b-900b-4ceb-81a7-2fd244da7edd"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="0ca42f8a-1932-4363-b358-064f3c1cbfea" configVersion="5486d07f6348764db55dcb27b4d7406fe0685236"/>
+		<Metadata name="StyleItem.БыстрыеОтборыФонГруппы" id="5a0d11f2-abaf-4a1b-8303-ffd4c78abde0" configVersion="2cd1bf60c552a650b492bee4268cb957bf2cd02b"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
