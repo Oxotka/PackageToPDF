@@ -7,6 +7,7 @@
 		</v8:item>
 	</Title>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>Bottom</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -33,23 +34,63 @@
 				<CommandName>Form.Command.Печать</CommandName>
 				<ExtendedTooltip name="ПечатьExtendedTooltip" id="49"/>
 			</Button>
+			<Button name="ФормаСохранитьВПДФ" id="86">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьВPDF</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьВПДФРасширеннаяПодсказка" id="87"/>
+			</Button>
 			<Button name="ФормаОтмена" id="84">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.Cancel</CommandName>
 				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="85"/>
 			</Button>
-			<Button name="ФормаСохранитьВПДФ" id="86">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СохранитьВПДФ</CommandName>
-				<ExtendedTooltip name="ФормаСохранитьВПДФРасширеннаяПодсказка" id="87"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen" callType="After">КомплектыВPDF_ПриОткрытииПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">КомплектыВPDF_ПриСозданииНаСервереПосле</Event>
+	</Events>
 	<ChildItems>
+		<RadioButtonField name="РежимРаботы" id="91">
+			<DataPath>РежимРаботы</DataPath>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Печать комплекта</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ПечатьКомплекта</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сохранить в PDF</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">СохранениеВPDF</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="РежимРаботыКонтекстноеМеню" id="92"/>
+			<ExtendedTooltip name="РежимРаботыРасширеннаяПодсказка" id="93"/>
+			<Events>
+				<Event name="OnChange" callType="After">КомплектыВPDF_РежимРаботыПриИзмененииПосле</Event>
+			</Events>
+		</RadioButtonField>
 		<Table name="КомплектПечатныхФорм" id="3">
 			<Representation>List</Representation>
 			<ChangeRowSet>false</ChangeRowSet>
-			<ChangeRowOrder>false</ChangeRowOrder>
 			<HorizontalLines>false</HorizontalLines>
 			<VerticalLines>false</VerticalLines>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -150,6 +191,11 @@
 			<ContextMenu name="ПечатьСразуНаПринтерКонтекстноеМеню" id="82"/>
 			<ExtendedTooltip name="ПечатьСразуНаПринтерРасширеннаяПодсказка" id="83"/>
 		</CheckBoxField>
+		<InputField name="ПутьКФайлу" id="88">
+			<DataPath>ПутьКФайлу</DataPath>
+			<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="89"/>
+			<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="90"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="КомплектПечатныхФорм" id="2">
@@ -305,6 +351,42 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПутьКФайлу" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПутьКФайлу</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>РежимРаботы</Field>
+			</Save>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Печать" id="4">
@@ -322,20 +404,20 @@
 			</ToolTip>
 			<Representation>TextPicture</Representation>
 		</Command>
-		<Command name="СохранитьВПДФ" id="1">
+		<Command name="СохранитьВPDF" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить ВПДФ</v8:content>
+					<v8:content>Сохранить в PDF</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить ВПДФ</v8:content>
+					<v8:content>Сохранить ВPDF</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action callType="After">Расш1_СохранитьВПДФПосле</Action>
+			<Action callType="After">КомплектыВPDF_СохранитьВПДФПосле</Action>
 		</Command>
 	</Commands>
 	<Parameters>

@@ -6,15 +6,14 @@
 		<Metadata name="Catalog.Контрагенты" id="0348f3dc-8eec-4fa0-b7aa-96097b5ff3b6" configVersion="f31627931f70156fecf4857da6128bf1b66df8f5"/>
 		<Metadata name="Catalog.Организации" id="b2df0a77-3af2-4068-a1ad-3cddc945d99b" configVersion="238b31e503c1421b3374afce448e47f02975511d"/>
 		<Metadata name="CommonForm.НастройкаПечатиКомплекта" id="d9fa3c7c-0d19-40cd-88d6-4819fc0ad8e9" configVersion="2f5b3d9fb59339ec5fa2f8516c2f8cf30e042405"/>
-		<Metadata name="CommonForm.НастройкаПечатиКомплекта.Form" id="d9fa3c7c-0d19-40cd-88d6-4819fc0ad8e9.0" configVersion="32820e798a6c0544d3826dd5d73145980e554c68"/>
+		<Metadata name="CommonForm.НастройкаПечатиКомплекта.Form" id="d9fa3c7c-0d19-40cd-88d6-4819fc0ad8e9.0" configVersion="336a02ce32341c6b36305ef130eca79f9308e01b"/>
 		<Metadata name="CommonPicture.КонвертC4Выбран" id="e7e7045a-9715-41a1-9f3b-b7ce144c7e75" configVersion="8a5995f40841e9d40ef74527da4ab22fac5aafb6"/>
 		<Metadata name="CommonPicture.КонвертC5" id="6f86ce47-7a99-4572-8b71-c28de4d40a95" configVersion="3cc54a88a26f27ee40f55a17ac4b13365dfd96ec"/>
 		<Metadata name="CommonPicture.КонвертC5Выбран" id="73def388-a6ea-44a6-9c80-d26c9946e393" configVersion="f6cc55678a1fabefbf82d8688963d026307f6e97"/>
 		<Metadata name="CommonPicture.КонвертDL" id="d848fb06-bc7c-40d2-b6da-2036e1548ecc" configVersion="23057eeb2b533b7f8544bb0c72c6c9b8634f2618"/>
 		<Metadata name="CommonPicture.КонвертDLВыбран" id="74f1cdec-78dc-4eec-90ba-e23a7e3fafb0" configVersion="be2b8275e862c9b3736497e697de43c465cb1595"/>
 		<Metadata name="CommonPicture.КонвертС4" id="3e632f56-0432-4ffd-870d-d16f635f798e" configVersion="11bd1eb22d21e6fb6cdb95513ce9a438ccb2a625"/>
-		<Metadata name="CommonTemplate.Расш1_Макет" id="e14d22f7-17ea-456a-be1e-f6571cc68951" configVersion="3de016ed7bd33eda43bd08fd18a89fd05bc0e14c"/>
-		<Metadata name="Configuration.ПечатьКомплектовВПДФ" id="63e934e1-3ab0-4f20-964e-4f0190ce9bcb" configVersion="dab4585303de2ae856d28e393db5b10e05496ebf"/>
+		<Metadata name="Configuration.СохранитьКомплектВPDF" id="63e934e1-3ab0-4f20-964e-4f0190ce9bcb" configVersion="165b75f926120a73503776afc28bd45168d7167c"/>
 		<Metadata name="Document.АктСверкиВзаиморасчетов" id="f3b393fd-020f-4749-9037-1afd816bb8de" configVersion="d4875e9ac1b2c9dbe15cbc5947d154e254ff4cda"/>
 		<Metadata name="Document.ПоступлениеТоваровУслуг" id="d89a5cf7-a084-4569-b3a6-93474676afeb" configVersion="d9b4a7b82fee5fa999fa82bff4a1eaa7a4d1051b"/>
 		<Metadata name="Document.РеализацияТоваровУслуг" id="98418841-0ca1-4b1e-9639-f12713350291" configVersion="a7198bf0164a888bbf526a2bae4b6a83f193d306"/>
