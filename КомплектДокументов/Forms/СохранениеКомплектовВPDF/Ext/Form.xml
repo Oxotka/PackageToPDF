@@ -21,7 +21,6 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
-		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -31,7 +30,6 @@
 			<ContextMenu name="ПутьКФайламКонтекстноеМеню" id="54"/>
 			<ExtendedTooltip name="ПутьКФайламРасширеннаяПодсказка" id="55"/>
 			<Events>
-				<Event name="OnChange">ПутьКФайламПриИзменении</Event>
 				<Event name="StartChoice">ПутьКФайламНачалоВыбора</Event>
 			</Events>
 		</InputField>
@@ -163,20 +161,6 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
-		</Attribute>
-		<Attribute name="ОбъектСсылка" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Объект ссылка</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
-			</Type>
-			<Save>
-				<Field>ОбъектСсылка</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="КомплектПечатныхФорм" id="4">
 			<Title>
@@ -343,21 +327,6 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Ключ настроек</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ИмяФайла" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Имя файла</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
