@@ -861,6 +861,18 @@
 			</Type>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
+		<Attribute name="Объект" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.КомплектДокументовВPDF</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Отправить" id="1">
