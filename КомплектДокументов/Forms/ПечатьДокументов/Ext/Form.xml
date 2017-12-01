@@ -239,6 +239,37 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаПредупреждение" id="239">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждение</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:БыстрыеОтборыФонГруппы</BackColor>
+			<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="240"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияТекстПредупреждения" id="241">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>70</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;b&gt;Внимание!&lt;/&gt; Передано несколько комплектов документов. 
+При нажатии на кнопку "Сохранить в PDF" будет создан только &lt;b&gt;один&lt;/&gt; комплект.
+Для сохранения каждого комплекта отдельно установите флаг "Сразу сохранять в PDF" в предыдущем окне.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияТекстПредупрежденияКонтекстноеМеню" id="242"/>
+					<ExtendedTooltip name="ДекорацияТекстПредупрежденияРасширеннаяПодсказка" id="243"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="ПутьКФайлам" id="228">
 			<DataPath>ПутьКФайлам</DataPath>
 			<ChoiceButton>true</ChoiceButton>
