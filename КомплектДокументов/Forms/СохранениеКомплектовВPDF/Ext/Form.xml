@@ -35,6 +35,13 @@
 				<Event name="StartChoice">ПутьКФайламНачалоВыбора</Event>
 			</Events>
 		</InputField>
+		<CheckBoxField name="ПечатьИПодписи" id="61">
+			<DataPath>ВывестиПечатьИПодписи</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПечатьИПодписиКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="ПечатьИПодписиРасширеннаяПодсказка" id="63"/>
+		</CheckBoxField>
 		<Table name="КомплектПечатныхФорм" id="24">
 			<Representation>List</Representation>
 			<CommandBarLocation>Top</CommandBarLocation>
@@ -353,6 +360,20 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ВывестиПечатьИПодписи" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать и подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВывестиПечатьИПодписи</Field>
+			</Save>
 		</Attribute>
 	</Attributes>
 	<Commands>
