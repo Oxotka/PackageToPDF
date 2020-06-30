@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>None</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -29,8 +29,8 @@
 					<Type>UsualButton</Type>
 					<DefaultButton>true</DefaultButton>
 					<SkipOnInput>false</SkipOnInput>
-					<OnlyInAllActions>true</OnlyInAllActions>
 					<CommandName>Form.Command.СохранитьВPDF</CommandName>
+					<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="КнопкаПечатьКоманднаяПанельExtendedTooltip" id="145"/>
 				</Button>
 				<Button name="КнопкаПредварительныйПросмотр" id="214">
@@ -112,8 +112,8 @@
 						</ButtonGroup>
 						<Button name="ВычислитьСумму" id="187">
 							<Type>CommandBarButton</Type>
-							<OnlyInAllActions>true</OnlyInAllActions>
 							<CommandName>Form.Command.ВычислитьСумму</CommandName>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 							<ExtendedTooltip name="ВычислитьСуммуExtendedTooltip" id="188"/>
 						</Button>
 					</ChildItems>
@@ -131,8 +131,8 @@
 						<Button name="КнопкаПечатьВсеДействия" id="120">
 							<Type>CommandBarButton</Type>
 							<SkipOnInput>false</SkipOnInput>
-							<OnlyInAllActions>false</OnlyInAllActions>
 							<CommandName>Form.Command.СохранитьВPDF</CommandName>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 							<ExtendedTooltip name="КнопкаПечатьВсеДействияExtendedTooltip" id="148"/>
 						</Button>
 						<Button name="КнопкаПредварительныйПросмотрВсеДействия" id="216">
@@ -156,14 +156,14 @@
 							<ChildItems>
 								<Button name="КнопкаСохранитьВсеДействия" id="196">
 									<Type>CommandBarButton</Type>
-									<OnlyInAllActions>false</OnlyInAllActions>
 									<CommandName>Form.Command.Сохранить</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="КнопкаСохранитьВсеДействияРасширеннаяПодсказка" id="197"/>
 								</Button>
 								<Button name="КнопкаОтправитьВсеДействия" id="198">
 									<Type>CommandBarButton</Type>
-									<OnlyInAllActions>false</OnlyInAllActions>
 									<CommandName>Form.Command.Отправить</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="КнопкаОтправитьВсеДействияРасширеннаяПодсказка" id="199"/>
 								</Button>
 							</ChildItems>
@@ -179,15 +179,15 @@
 							<ChildItems>
 								<Button name="КнопкаИзменитьМакет" id="138">
 									<Type>CommandBarButton</Type>
-									<OnlyInAllActions>false</OnlyInAllActions>
 									<CommandName>Form.Command.ИзменитьМакет</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="КнопкаИзменитьМакетExtendedTooltip" id="164"/>
 								</Button>
 								<Button name="КнопкаПерейтиКУправлениюМакетами" id="81">
 									<Type>CommandBarButton</Type>
 									<SkipOnInput>false</SkipOnInput>
-									<OnlyInAllActions>false</OnlyInAllActions>
 									<CommandName>Form.Command.ПерейтиКУправлениюМакетами</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="КнопкаПерейтиКУправлениюМакетамиExtendedTooltip" id="165"/>
 								</Button>
 							</ChildItems>
@@ -220,6 +220,7 @@
 						<xr:Ref>CommonPicture.Информация</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="КартинкаИнформацииКонтекстноеМеню" id="234"/>
 					<ExtendedTooltip name="КартинкаИнформацииРасширеннаяПодсказка" id="235"/>
 				</PictureDecoration>
@@ -252,7 +253,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<BackColor>style:БыстрыеОтборыФонГруппы</BackColor>
+			<BackColor>0:b6be3fc0-323b-4460-9e37-911985c67a0f</BackColor>
 			<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="240"/>
 			<ChildItems>
 				<LabelDecoration name="ДекорацияТекстПредупреждения" id="241">
@@ -305,6 +306,7 @@
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>НастройкиПечатныхФорм</DataPath>
 					<Title>
 						<v8:item>
@@ -339,26 +341,26 @@
 								<ChildItems>
 									<Button name="КнопкаУстановитьФлажкиКонтекстноеМеню" id="99">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Command.УстановитьФлажки</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаУстановитьФлажкиКонтекстноеМенюExtendedTooltip" id="168"/>
 									</Button>
 									<Button name="КнопкаСнятьФлажкиКонтекстноеМеню" id="100">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Command.СнятьФлажки</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаСнятьФлажкиКонтекстноеМенюExtendedTooltip" id="169"/>
 									</Button>
 									<Button name="КнопкаПереместитьВверхКонтекстноеМеню" id="110">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Item.НастройкиПечатныхФорм.StandardCommand.MoveUp</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаПереместитьВверхКонтекстноеМенюExtendedTooltip" id="170"/>
 									</Button>
 									<Button name="КнопкаПереместитьВнизКонтекстноеМеню" id="111">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Item.НастройкиПечатныхФорм.StandardCommand.MoveDown</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаПереместитьВнизКонтекстноеМенюExtendedTooltip" id="171"/>
 									</Button>
 									<Button name="КнопкаСброситьНастройкиКонтекстноеМеню" id="128">
@@ -389,32 +391,32 @@
 								<ChildItems>
 									<Button name="КнопкаУстановитьФлажкиПодменю" id="122">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Command.УстановитьФлажки</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаУстановитьФлажкиПодменюExtendedTooltip" id="151"/>
 									</Button>
 									<Button name="КнопкаСнятьФлажкиПодменю" id="123">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Command.СнятьФлажки</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаСнятьФлажкиПодменюExtendedTooltip" id="152"/>
 									</Button>
 									<Button name="КнопкаПереместитьВверхПодменю" id="124">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Item.НастройкиПечатныхФорм.StandardCommand.MoveUp</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаПереместитьВверхПодменюExtendedTooltip" id="153"/>
 									</Button>
 									<Button name="КнопкаПереместитьВнизПодменю" id="125">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Item.НастройкиПечатныхФорм.StandardCommand.MoveDown</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаПереместитьВнизПодменюExtendedTooltip" id="154"/>
 									</Button>
 									<Button name="КнопкаСброситьНастройкиПодменю" id="126">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>false</OnlyInAllActions>
 										<CommandName>Form.Command.СброситьНастройки</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="КнопкаСброситьНастройкиПодменюExtendedTooltip" id="155"/>
 									</Button>
 								</ChildItems>
@@ -540,6 +542,7 @@
 												<xr:Ref>CommonPicture.Информация32</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="КартинкаПечатнаяФормаНедоступнаКонтекстноеМеню" id="131"/>
 											<ExtendedTooltip name="КартинкаПечатнаяФормаНедоступнаExtendedTooltip" id="183"/>
 										</PictureDecoration>
