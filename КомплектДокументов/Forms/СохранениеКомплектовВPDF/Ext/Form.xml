@@ -138,13 +138,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНастроекРасширеннаяПодсказка" id="67"/>
 			<ChildItems>
-				<CheckBoxField name="Предпросмотр" id="56">
-					<DataPath>Предпросмотр</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПредпросмотрКонтекстноеМеню" id="57"/>
-					<ExtendedTooltip name="ПредпросмотрРасширеннаяПодсказка" id="58"/>
-				</CheckBoxField>
 				<UsualGroup name="ГруппаПечатьПодписиБезФона" id="68">
 					<Title>
 						<v8:item>
@@ -192,6 +185,23 @@
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
+				<CheckBoxField name="Предпросмотр" id="56">
+					<DataPath>Предпросмотр</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПредпросмотрКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПредпросмотрРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="OnChange">ПредпросмотрПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ОткрытьФайлыПослеСохранения" id="70">
+					<DataPath>ОткрытьФайлыПослеСохранения</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОткрытьФайлыПослеСохраненияКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ОткрытьФайлыПослеСохраненияРасширеннаяПодсказка" id="72"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -415,6 +425,31 @@
 			</Type>
 			<Save>
 				<Field>ВывестиПечатьИПодписи</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Организация" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткрытьФайлыПослеСохранения" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть после сохранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОткрытьФайлыПослеСохранения</Field>
 			</Save>
 		</Attribute>
 	</Attributes>
